@@ -1,0 +1,10 @@
+:root { color-scheme: dark; font-family: system-ui, sans-serif; background: #16171b; color: #f0f0f2; }
+* { box-sizing: border-box; } body { margin: 0; } main { max-width: 1080px; margin: 40px auto; padding: 24px; }
+h1 { margin-bottom: 8px; } p { color: #b5b5c0; line-height: 1.6; } a { color: #ff986f; }
+.stage { border: 1px solid #3b3c45; border-radius: 12px; background: repeating-conic-gradient(#22232b 0% 25%, #1b1c23 0% 50%) 0 / 24px 24px; overflow: hidden; margin: 24px 0; }
+canvas { display: block; width: 100%; height: auto; aspect-ratio: 16/9; }
+.controls { display: flex; gap: 10px; flex-wrap: wrap; align-items: center; margin: 18px 0; }
+button, select, input::file-selector-button { font: inherit; color: inherit; background: #2e3039; border: 1px solid #4b4d58; padding: 10px 14px; border-radius: 6px; cursor: pointer; }
+button:hover { border-color: #ff986f; } button:disabled { opacity: .45; cursor: wait; }
+label { display: inline-flex; gap: 8px; align-items: center; } .status { min-height: 24px; color: #ffad8b; }
+progress { width: 100%; accent-color: #ff794b; } input[type=file] { max-width: 100%; }

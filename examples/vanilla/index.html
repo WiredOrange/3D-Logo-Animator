@@ -1,0 +1,8 @@
+<!doctype html><html lang="en"><head><meta charset="UTF-8" /><meta name="viewport" content="width=device-width,initial-scale=1" /><title>Vanilla JS integration · Logo Flight</title></head><body><main>
+<a href="/">← Full editor</a><h1>Embed it in any application.</h1><p>This page uses the controller directly. Fly in, hold for as long as you need, then trigger the exit.</p>
+<input id="file" type="file" accept="image/png,image/svg+xml,image/jpeg,image/webp" aria-label="Choose logo" />
+<div class="stage" id="stage"><canvas id="preview" aria-label="3D logo preview"></canvas></div>
+<div class="controls"><button data-action="enter">Fly in & hold</button><button data-action="exit">Fly out</button><button data-action="play">Play full clip</button><button data-action="pause">Pause</button><button data-action="inspect">Inspect 3D</button></div>
+<div class="controls"><label>Resolution <select id="resolution"><option value="720p">720p</option><option value="1080p" selected>1080p</option><option value="2k">2K · 2560 × 1440</option><option value="4k">4K · 3840 × 2160</option></select></label><button id="export">Export transparent MOV</button><button id="cancel" hidden>Cancel export</button></div>
+<progress id="progress" max="1" value="0" hidden></progress><p class="status" id="status" role="status"></p><p><a href="/examples/react/">React component example →</a></p>
+</main><script type="module" src="./main.ts"></script></body></html>
